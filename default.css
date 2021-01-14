@@ -29,6 +29,15 @@ h1{
     text-shadow: 10px 3px 7px rgba(0,0,0,0.6); 
 }
 
+h2{
+    font-size: 1.6em;
+    padding: 25px 0;
+    font-weight: 900;
+    text-shadow: 10px 3px 7px rgba(0,0,0,0.6);
+    font-style: italic;
+}
+
+
 a {
     text-decoration: none;
     font-family: 'Satisfy', cursive;
@@ -40,10 +49,13 @@ a {
 }
 
 a:hover{
-    color:rgba(250, 150, 84, 0.856);
+    color:rgba(231, 127, 58, 0.89);
     font-size: 2em;
 }
 
+p{
+    font-size: 1.2em;
+}
 
 /* container */
 
@@ -64,8 +76,7 @@ header{
 
 nav ul{
     display: flex;
-    justify-content: space-between;
-   
+    justify-content: space-between;   
 }
 
 nav ul li{
@@ -74,7 +85,7 @@ nav ul li{
 
 /* animation header */
 
-.tracking-in-expand-fwd {
+/* .tracking-in-expand-fwd {
 	-webkit-animation: tracking-in-expand-fwd 5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	        animation: tracking-in-expand-fwd 5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
@@ -110,7 +121,7 @@ nav ul li{
               transform: translateZ(0);
       opacity: 1;
     }
-  }
+  } */
   
 /* section */
 
@@ -121,13 +132,37 @@ nav ul li{
     text-align: justify;
 }
 
+#presentation{
+  margin-top: 30px;
+}
 
+.flex-image{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.image{
+    height: 400px; 
+    width: auto;
+    overflow: hidden;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    
+}
+
+#title{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 1.2em; 
+}
 
 
 /* footer */
 
 footer{
     border-top: 3px solid black;
+    
     display: flex;
     align-items: center;
     justify-content: center;
