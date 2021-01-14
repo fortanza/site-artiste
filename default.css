@@ -31,14 +31,13 @@ h1{
 
 h2{
     font-size: 1.6em;
-    padding: 25px 0;
     font-weight: 900;
     text-shadow: 10px 3px 7px rgba(0,0,0,0.6);
     font-style: italic;
 }
 
 
-a {
+header a {
     text-decoration: none;
     font-family: 'Satisfy', cursive;
     font-size: 1.3em;
@@ -48,7 +47,7 @@ a {
     transition: all 1s;
 }
 
-a:hover{
+header a:hover{
     color:rgba(231, 127, 58, 0.89);
     font-size: 2em;
 }
@@ -128,19 +127,23 @@ nav ul li{
 #content{
     flex-grow:1; /* 4 */
     font-family: 'Satisfy', cursive;
-    margin-top: 30px;
+    margin-top: 50px;
     text-align: justify;
 }
 
+#content p{
+  margin-top: 20px;
+}
+
 #presentation{
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .flex-image{
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .image{
@@ -152,10 +155,42 @@ nav ul li{
 }
 
 #title{
-    margin-top: 10px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 50px;
     font-size: 1.2em; 
 }
+
+/* contact */
+
+#contact{
+  
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#btn-contact{
+  margin-top: 15px;
+  font-size: 1.1em;
+  font-weight: 900;
+  color:rgba(231, 127, 58, 0.89);
+  border: 1px solid black;
+  padding: 20px;
+  background: url(assets/pictures/contact.jpg) no-repeat center ;
+  transition: all 1s;
+  
+}
+
+#btn-contact:hover{
+
+  transform: scale(1.2);
+  transition: all 1s;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
 
 
 /* footer */
