@@ -13,6 +13,11 @@
     box-sizing: border-box;
 }
 
+a{
+  text-decoration: none;
+  color: white;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     min-height:100vh; /* 1 */
@@ -38,7 +43,7 @@ h2{
 
 
 header a {
-    text-decoration: none;
+    
     font-family: 'Satisfy', cursive;
     font-size: 1.3em;
     color: white;
@@ -146,8 +151,9 @@ nav ul li{
   margin-top: 20px;
 }
 
-.image{
+#image{
     height: 400px; 
+    border-radius: 20px;
     width: auto;
     overflow: hidden;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
@@ -172,23 +178,38 @@ nav ul li{
   flex-direction: column;
 }
 
+#contact span{
+  opacity: 0;
+  transition: all 1s;
+}
+
+#contact span:hover{
+  opacity: 1;
+  transition: all 1s;
+  color: white;
+}
+
+
 #btn-contact{
   margin-top: 15px;
   font-size: 1.1em;
   font-weight: 900;
-  color:rgba(231, 127, 58, 0.89);
-  border: 1px solid black;
+  border-radius: 20px;
   padding: 20px;
   background: url(assets/pictures/contact.jpg) no-repeat center ;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   transition: all 1s;
   
 }
 
 #btn-contact:hover{
-
-  transform: scale(1.2);
-  transition: all 1s;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  
+  transform: scale(1.1);
+  transition: all 2s;
+  /* box-shadow: 5px 5px 20px 1px rgba(0,0,0,0.66) inset; */
+  background: rgb(218,200,178);
+  background: linear-gradient(21deg, rgba(218,200,178,1) 6%, rgba(226,216,211,0.9416141456582633) 32%, rgba(242,211,182,0.9612219887955182) 49%, rgba(238,189,141,0.8015581232492998) 64%, rgba(237,218,200,1) 83%)
+  
 }
 
 
