@@ -85,7 +85,7 @@ let dessin = [
 
 // Création des variables 
 
-let image = document.querySelector("image");
+let image = document.querySelector("#image");
 let title= document.querySelector("#title")
 let dernier = 0;
 let nombreAleatoire = 0;
