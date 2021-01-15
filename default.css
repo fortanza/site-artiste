@@ -66,6 +66,7 @@ p{
 .container{
     width: 80%;
     margin: 0 auto;
+    transition: opacity 1s, visibitity 1s;
 }
 
 /* Header */
@@ -156,7 +157,9 @@ nav ul li{
     border-radius: 20px;
     width: auto;
     overflow: hidden;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);   
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    opacity:1.0;
+    transition: opacity .5s ease-in;   
 }
 
 #title{
@@ -202,16 +205,12 @@ nav ul li{
 }
 
 #btn-contact:hover{
-  
   transform: scale(1.1);
   transition: all 2s;
   /* box-shadow: 5px 5px 20px 1px rgba(0,0,0,0.66) inset; */
   background: rgb(218,200,178);
   background: linear-gradient(21deg, rgba(218,200,178,1) 6%, rgba(226,216,211,0.9416141456582633) 32%, rgba(242,211,182,0.9612219887955182) 49%, rgba(238,189,141,0.8015581232492998) 64%, rgba(237,218,200,1) 83%)
-  
 }
-
-
 
 /* footer */
 
