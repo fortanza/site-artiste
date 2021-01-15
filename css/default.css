@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "bacalisties";
-    src: url("assets/font/Bacalisties.ttf");       
+    src: url("/assets/font/Bacalisties.ttf");       
    }
 
 /* balises */
@@ -76,7 +76,7 @@ p{
 
 header{
     height: 300px;
-    background: url(assets/pictures/pexels-karolina-grabowska-4046718.jpg) no-repeat center fixed;
+    background: url(/assets/pictures/pexels-karolina-grabowska-4046718.jpg) no-repeat center fixed;
     background-size: cover;
     color: white;     
 }
@@ -226,7 +226,7 @@ nav ul li{
   font-weight: 900;
   border-radius: 20px;
   padding: 20px;
-  background: url(assets/pictures/contact.jpg) no-repeat center ;
+  background: url(/assets/pictures/contact.jpg) no-repeat center ;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   transition: all 1s;
   
@@ -248,7 +248,7 @@ footer{
     justify-content: center;
     height: 100px; 
     text-align: center;
-    background: url(assets/pictures/pexels-karolina-grabowska-4046718.jpg) no-repeat center fixed;
+    background: url(/assets/pictures/pexels-karolina-grabowska-4046718.jpg) no-repeat center fixed;
     background-size: cover;
     color:rgb(255, 255, 255);
     text-shadow: 10px 3px 7px rgba(0,0,0,0.6); 

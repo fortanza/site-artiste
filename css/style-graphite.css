@@ -1,0 +1,94 @@
+/* personalisation graphite.html */
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 50px;
+    margin: 50px 0px;
+}
+
+.grid-content{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+    transition: all .8s;
+}
+
+.grid-content:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    transform: scale(1.1);
+    transition: all .8s;
+    opacity: 1;
+}
+
+.grid-content img{
+    height: 350px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+.grid-content p{
+
+    margin: 20px 0;
+}
+
+
+.click-option{
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    top: 50;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all .8s;
+    color: rgba(231, 127, 58, 0.89);
+    margin-bottom: 20px;
+}
+
+.click-option:hover{
+    position: absolute;
+    height: 100%;
+    opacity: 1;
+    transition: all .8s;
+}
+
+/* personalisation du conteneur de la gallerie */
+
+#galleryContainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(218,200,178);
+    background: linear-gradient(21deg, rgba(218,200,178,1) 6%, rgba(226,216,211,0.9416141456582633) 32%, rgba(242,211,182,0.9612219887955182) 49%, rgba(238,189,141,0.8015581232492998) 64%, rgba(237,218,200,1) 83%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s, visibility 1s;
+}
+
+#galleryContainer img{
+    border: 5px solid black;
+    max-height: 80%;
+    width: auto; 
+}
+
+#galleryContainer.visible{
+    opacity: 1;
+    visibility: visible;
+}
