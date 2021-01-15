@@ -69,7 +69,6 @@ p{
 .container{
     width: 80%;
     margin: 0 auto;
-    transition: opacity 1s, visibitity 1s;
 }
 
 /* Header */
@@ -154,8 +153,6 @@ nav ul li{
     }
     } 
 
-
-
 /* section */
 
 #content{
@@ -187,7 +184,7 @@ nav ul li{
     overflow: hidden;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     opacity:1.0;
-    transition: opacity .5s ease-in;   
+    transition: opacity 1s, visibility 1s;   
 }
 
 #title{
