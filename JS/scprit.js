@@ -21,7 +21,7 @@ let dessin = [
         "Coquelicot (Crayon Graphite et Ecoline)"
     ],
     [
-        "/assets/pictures/normal-pictures/Tableau (31).jpg", 
+        "/assets/pictures/normal-pictures/paysage (1).jpg", 
         "Cap Blanc Nez (peinture à l'huile)"
     ],
     [
@@ -37,7 +37,7 @@ let dessin = [
         "La dame au chapeau (Crayon Graphite et Ecoline)"
     ],
     [
-        "/assets/pictures/normal-pictures/Tableau (19).jpg", 
+        "/assets/pictures/normal-pictures/paysage (4).jpg", 
         "Phare de Rania (Crête) d'après photo personnelle peinture à l'huile"
     ],
     [
@@ -49,7 +49,7 @@ let dessin = [
         "Femme chat (mine graphite, encre et pastel)"
     ],
     [
-        "/assets/pictures/normal-pictures/Tableau (43).jpg", 
+        "/assets/pictures/normal-pictures/fleurs (28).jpg", 
         "Fleurs Sauvages (Peinture à l'acrylique)"
     ],
     [
@@ -69,7 +69,7 @@ let dessin = [
         "Portrait d'enfant (mine graphite)"
     ],
     [
-        "/assets/pictures/normal-pictures/tableau (49).jpg", 
+        "/assets/pictures/normal-pictures/modele feminin (2).jpg", 
         "Féria techniques mixtes sans cadre)"
     ],
     [
@@ -81,8 +81,8 @@ let dessin = [
         "Portrait d'un jeune fille (Crayon Graphite et Ecoline)"
     ],
     [
-        "/assets/pictures/normal-pictures/tableau (45).jpg", 
-        "Portrait d'une femme (Peinture à l'acrylique)"
+        "/assets/pictures/normal-pictures/modele feminin (1).jpg", 
+        "Regard (Peinture à l'acrylique)"
     ]
 ];
 
