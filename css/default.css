@@ -82,7 +82,8 @@ header{
 
 nav ul{
     display: flex;
-    justify-content: space-between;   
+    justify-content: space-between;
+    flex-wrap: wrap;   
 }
 
 nav ul li{
@@ -234,7 +235,8 @@ nav ul li{
   transition: all 2s;
   /* box-shadow: 5px 5px 20px 1px rgba(0,0,0,0.66) inset; */
   background: rgb(218,200,178);
-  background: linear-gradient(21deg, rgba(218,200,178,1) 6%, rgba(226,216,211,0.9416141456582633) 32%, rgba(242,211,182,0.9612219887955182) 49%, rgba(238,189,141,0.8015581232492998) 64%, rgba(237,218,200,1) 83%)
+  background: linear-gradient(21deg, rgba(218,200,178,1) 6%, rgba(226,216,211,0.9416141456582633) 32%, rgba(242,211,182,0.9612219887955182) 49%, rgba(238,189,141,0.8015581232492998) 64%, rgba(237,218,200,1) 83%);
+  cursor: pointer;
 }
 
 /* footer */
@@ -249,4 +251,29 @@ footer{
     background-size: cover;
     color:rgb(255, 255, 255);
     text-shadow: 10px 3px 7px rgba(0,0,0,0.6); 
+}
+
+
+/* mediaqueries */
+
+@media all and (max-width: 760px) {
+
+  h1{
+    font-family: "bacalisties"; 
+    text-align: center; 
+    font-size: 3em;
+    padding: 25px 0;
+    font-weight: 900;
+    text-shadow: 10px 3px 7px rgba(0,0,0,0.6); 
+}
+
+header a {
+    
+  font-family: 'Satisfy', cursive;
+  font-size: 1.3em;
+  color: white;
+  font-weight: 500;
+  text-shadow: 10px 3px 7px rgba(0,0,0,0.6);
+  transition: all 1s;
+}
 }
