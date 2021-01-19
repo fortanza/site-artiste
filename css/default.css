@@ -15,7 +15,7 @@
 
 a{
   text-decoration: none;
-  color: white;
+  color: rgba(46, 49, 49, 1);
 }
 
 body{
@@ -23,8 +23,7 @@ body{
     min-height:100vh; /* 1 */
 	  display:flex; /* 2 */
     flex-direction:column; /* 3 */
-    
-  
+    color: rgba(14, 10, 10, 0.9);
 }
 
 h1{
@@ -45,19 +44,20 @@ h2{
 }
 
 
-header a {
+nav a {
     
     font-family: 'Satisfy', cursive;
     font-size: 1.3em;
-    color: white;
+    color: rgba(46, 49, 49, .7);
     font-weight: 500;
-    text-shadow: 10px 3px 7px rgba(0,0,0,0.6);
-    transition: all 1s;
+    text-shadow: 10px 3px 7px rgba(189, 195, 199, .6);
+    transition: all .8s;
+    height: 100px;
 }
 
-header a:hover{
-    color:rgba(231, 127, 58, 0.89);
-    font-size: 2em;
+nav a:hover{
+    color:rgba(46, 49, 49, 1);
+    font-size: 1.6em;
 }
 
 p{
@@ -76,10 +76,23 @@ p{
 
 header{
     height: 300px;
-    background: url(/assets/pictures/pexels-karolina-grabowska-4046718.jpg) no-repeat center fixed;
+    background: url(/assets/pictures/pexels-karolina-grabowska-4046718.jpg) no-repeat;
     background-size: cover;
-    color: white;     
+    color: rgba(46, 49, 49, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;     
 }
+
+nav{
+
+  background-image: linear-gradient(to right bottom, #c9cacd, #d6d7d9, #e4e4e6, #f2f1f2, #ffffff);
+  width: 100%;
+  height: 60px;
+  display: flex; 
+  align-items: center;
+}
+
 
 nav ul{
     display: flex;
@@ -96,8 +109,8 @@ nav ul li{
 .slideInRight {
   -webkit-animation-name: slideInRight;
   animation-name: slideInRight;
-  -webkit-animation-duration: 5s;
-  animation-duration: 5s;
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   }
@@ -127,8 +140,8 @@ nav ul li{
   .slideInLeft {
     -webkit-animation-name: slideInLeft;
     animation-name: slideInLeft;
-    -webkit-animation-duration: 5s;
-    animation-duration: 5s;
+    -webkit-animation-duration: 2.5s;
+    animation-duration: 2.5s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
     }
@@ -215,7 +228,7 @@ nav ul li{
 #contact span:hover{
   opacity: 1;
   transition: all 1s;
-  color: white;
+  color: rgba(46, 49, 49, 1);
 }
 
 
@@ -234,9 +247,9 @@ nav ul li{
 #btn-contact:hover{
   transform: scale(1.1);
   transition: all 2s;
-  /* box-shadow: 5px 5px 20px 1px rgba(0,0,0,0.66) inset; */
-  background: rgb(218,200,178);
-  background: linear-gradient(21deg, rgba(218,200,178,1) 6%, rgba(226,216,211,0.9416141456582633) 32%, rgba(242,211,182,0.9612219887955182) 49%, rgba(238,189,141,0.8015581232492998) 64%, rgba(237,218,200,1) 83%);
+  text-shadow: 10px 3px 7px rgba(0,0,0,0.6); 
+  color: rgba(46, 49, 49, 1);
+  background-image: linear-gradient(to right bottom, #c9cacd, #d6d7d9, #e4e4e6, #f2f1f2, #ffffff);
   cursor: pointer;
 }
 
@@ -248,10 +261,8 @@ footer{
     justify-content: center;
     height: 100px; 
     text-align: center;
-    background: url(/assets/pictures/pexels-karolina-grabowska-4046718.jpg) no-repeat center fixed;
-    background-size: cover;
-    color:rgb(255, 255, 255);
-    text-shadow: 10px 3px 7px rgba(0,0,0,0.6); 
+    text-shadow: 10px 3px 7px rgba(0,0,0,0.6);
+    background-image: linear-gradient(to top, #c9cacd, #d6d7d9, #e4e4e6, #f2f1f2, #ffffff);
 }
 
 
@@ -269,8 +280,6 @@ footer{
   
 nav ul{
   display: flex;
- 
-   
   flex-direction: column;
 }
 
