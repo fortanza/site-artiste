@@ -3,7 +3,7 @@
 $nom = $_POST['nom'];
 $mail= $_POST['mail'];
 $message= $_POST['message'];
-$to = "blandineportraitiste@gmail.com";
+$to = "blandine.francois14@wanadoo.fr";
 $subject = "Demande de renseignement";
 $txt ="Nom = ". $nom . "\r\n  Email = " . $mail . "\r\n Message =" . $message;
 if($mail!=NULL){
