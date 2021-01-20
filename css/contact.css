@@ -1,5 +1,8 @@
 .tableau{
-    padding-bottom: 30px;
+    padding-bottom: 40px;
+    font-size: 1.2em;
+    font-weight: 900;
+    
 }
 
 .buttonContact{
@@ -16,7 +19,7 @@
 }
 
 fieldset{
-    border: 1px solid rgba(212, 147, 103, 0.2);
+    border: 1px solid  rgba(92, 92, 92, 0.2);
     border-radius: 20px;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     padding: 20px;
@@ -24,20 +27,45 @@ fieldset{
     font-size: 1.1em;
 }
 
+
 input[type=text], textarea, input[type=email], select[name=objet] {
     width: 100%;
-    margin: 6px 0px 16px 0px;
+    margin: 20px 0px 16px 0px;
     resize: vertical;
-    border: 1px solid rgba(231, 127, 58, 0.2);
+    border: 1px solid rgba(92, 92, 92, 0.2);
     border-radius: 20px;
-    padding: 10px;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    padding: 20px;
+    -webkit-box-shadow: inset 0px 1px 10px 2px #828282; 
+    box-shadow: inset 0px 1px 10px 2px #828282;;
+    background: white;
   }
 
-  label{margin-right: 0px;
-    margin-left: 0px;
-    width: 100%;}
+  input[type="submit"]{
+    font-size: 1.1em;
+    font-weight: 900;
+    border-radius: 20px;
+    padding: 15px 50px; 
+    margin-bottom: 50px;
+    background-image: linear-gradient(to right bottom, #c9cacd, #d6d7d9, #e4e4e6, #f2f1f2, #ffffff);
+    cursor: pointer;
+    transition: all .4s;
+  }
+
   
-  
-  
-  
+  input[type="submit"]:hover{
+
+    border: 1px solid rgba(92, 92, 92, 0.2);
+    transition: all .4s;
+    -webkit-box-shadow: inset 0px 1px 10px 2px #828282; 
+    box-shadow: inset 0px 1px 10px 2px #828282;
+  }
+
+  #objet{
+    padding-right: 60px;
+  } 
+
+  .btn{
+      display: flex;
+      justify-content: center;
+  }
+

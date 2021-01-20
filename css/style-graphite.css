@@ -56,8 +56,9 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgb(218,200,178);
-    background: linear-gradient(21deg, rgba(218,200,178,1) 6%, rgba(226,216,211,0.9416141456582633) 32%, rgba(242,211,182,0.9612219887955182) 49%, rgba(238,189,141,0.8015581232492998) 64%, rgba(237,218,200,1) 83%);
+    /* background: rgb(218,200,178);
+    background: linear-gradient(21deg, rgba(218,200,178,1) 6%, rgba(226,216,211,0.9416141456582633) 32%, rgba(242,211,182,0.9612219887955182) 49%, rgba(238,189,141,0.8015581232492998) 64%, rgba(237,218,200,1) 83%); */
+    background-image: linear-gradient(to right bottom, #c9cacd, #d6d7d9, #e4e4e6, #f2f1f2, #ffffff);
     display: flex;
     justify-content: center;
     align-items: center;

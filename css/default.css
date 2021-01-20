@@ -20,9 +20,9 @@ a{
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    min-height:100vh; /* 1 */
-	  display:flex; /* 2 */
-    flex-direction:column; /* 3 */
+    min-height:100vh; 
+	  display:flex; 
+    flex-direction:column; 
     color: rgba(14, 10, 10, 0.9);
 }
 
@@ -30,7 +30,6 @@ h1{
     font-family: "bacalisties"; 
     text-align: center; 
     font-size: 4em;
-    padding: 25px 0;
     font-weight: 900;
     text-shadow: 10px 3px 7px rgba(0,0,0,0.6); 
 }
@@ -43,32 +42,9 @@ h2{
     margin-bottom: 30px;
 }
 
-
-nav a {
-    
-    font-family: 'Satisfy', cursive;
-    font-size: 1.3em;
-    color: rgba(46, 49, 49, .7);
-    font-weight: 500;
-    text-shadow: 10px 3px 7px rgba(189, 195, 199, .6);
-    transition: all .8s;
-}
-
-nav a:hover{
-    color:rgba(46, 49, 49, 1);
-    font-size: 1.6em;
-}
-
 p{
     font-size: 1.2em;
     display: block;
-}
-
-/* container */
-
-.container{
-    width: 80%;
-    margin: 0 auto;
 }
 
 /* Header */
@@ -83,21 +59,48 @@ header{
     justify-content: center;     
 }
 
+/* Nav bar */
+
 nav{
   background-image: linear-gradient(to right bottom, #c9cacd, #d6d7d9, #e4e4e6, #f2f1f2, #ffffff);
   width: 100%;
-  height: 60px;
+  height: 60px;  
 }
 
+.navBar{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 0;
 
-nav ul{
+}
+
+.navBar ul{
     display: flex;
     justify-content: space-between;
-   
+    list-style: none;
+       
 }
 
-nav ul li{
-    list-style: none; 
+nav a { 
+    font-family: 'Satisfy', cursive;
+    font-size: 1.3em;
+    color: rgba(46, 49, 49, .7);
+    font-weight: 500;
+    text-shadow: 10px 3px 7px rgba(189, 195, 199, .6);
+    transition: all .8s;
+}
+
+nav a:hover{
+    color:rgba(46, 49, 49, 1);
+    font-size: 1.6em;
+}
+
+/* container */
+
+.container{
+    width: 80%;
+    margin: 0 auto;
 }
 
 /* menu burger */
@@ -316,17 +319,48 @@ footer{
 
 /* mediaqueries */
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 850px) {
 
   .burger{
     display: block;
-    padding-top: 9px;
+    padding-top: 3px;
     padding-left: 30px;
   }
-  .nav ul li{
-    display: none;
-    color:red
+
+  /* Nav bar */
+
+  nav{
+    height: 100%;  
   }
+
+  .navBar{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0;
+  }
+
+  .navBar ul{
+      display: flex;
+      justify-content: none;
+      flex-direction: column;
+      list-style: none;
+      margin-right: 10%; 
+      margin-left: 50%;
+  }
+
+  nav li {
+    margin: 10px 0px;
+  }
+
+  .navBar{
+    display: none;
+  }
+
+  .navBar.visibleNavBar{
+    display: block;
+  }
+  
 
 .container{
   width: 90%;
@@ -334,3 +368,10 @@ footer{
 }
 
 
+@media all and (max-width: 550px) {
+
+  h1{
+    font-size: 3.5em;
+  }
+
+}
