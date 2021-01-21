@@ -12,10 +12,3 @@ burger.addEventListener('click', () => {
 
 
 
-// btn.addEventListener("click", () => {
-//     if(getComputedStyle(navBar).display != "block"){
-//       navBar.style.display = "block";
-//     } else {
-//       navBar.style.display = "none";
-//     }
-//   })
