@@ -271,12 +271,12 @@ nav a:hover{
   flex-direction: column;
 }
 
-#contact span{
+#btn-contact a {
   opacity: 0;
   transition: all 1s;
 }
 
-#contact span:hover{
+#btn-contact a:hover{
   opacity: 1;
   transition: all 1s;
   color: rgba(46, 49, 49, 1);
@@ -346,7 +346,8 @@ footer{
       flex-direction: column;
       list-style: none;
       margin-right: 10%; 
-      margin-left: 50%;
+    
+      align-items: flex-end;
   }
 
   nav li {
@@ -371,7 +372,7 @@ footer{
 @media all and (max-width: 550px) {
 
   h1{
-    font-size: 3.5em;
+    font-size: 2.5em;
   }
 
 }
