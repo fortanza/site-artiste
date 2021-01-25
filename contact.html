@@ -8,18 +8,20 @@
     <link rel="shortcut icon" href="assets/pictures/favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Contact</title>
 </head>
 <body>
     <header >
-        <div class="slideInRight">
+        <div data-aos="zoom-in-down" data-aos-duration="2000">
             <h1>
                 Blandine Ternel <br>
                 Artiste Portraitiste
             </h1>
         </div>   
     </header>
-    <nav class="slideInLeft">
+    <nav data-aos="zoom-in-up" data-aos-duration="2000">
         <div class="burger">
             <span></span>
         </div>
@@ -33,9 +35,6 @@
                 </li>
                 <li>
                     <a href="pastel.html"> Dessin crayon pastel</a>
-                </li>
-                <li>
-                    <a href="peinture.html">Peinture</a>
                 </li>
                 <li>
                     <a href="contact.html">Contact</a>
@@ -70,10 +69,14 @@
             </form>
         </div>  
     </section>
-    <footer >
+    <footer data-aos="zoom-out" data-aos-duration="1500">
         © Copyright 2021 BLANDINE T. <br>
-        Reproduction interdite  
+        © Copyright Fortanza Reproduction interdite  
     </footer>
+    <script>
+        AOS.init();
+      </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="JS/gal-anim.js"></script>
     <script type="text/javascript" src="JS/burger.js"></script>

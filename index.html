@@ -7,19 +7,20 @@
     <link rel="shortcut icon" href="assets/pictures/favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Blandine T. Artiste Portraitiste</title>
 </head>
 <body>
     <header >
-        <div class="slideInRight">
+        <div data-aos="zoom-in-down" data-aos-duration="3000">
             <h1>
                 Blandine Ternel <br>
                 Artiste Portraitiste
             </h1>
-        </div>
-          
+        </div>   
     </header>
-    <nav class="slideInLeft">
+    <nav data-aos="zoom-in-up" data-aos-duration="3000">
         <div class="burger">
             <span></span>
         </div>
@@ -35,27 +36,28 @@
                     <a href="pastel.html"> Dessin crayon pastel</a>
                 </li>
                 <li>
-                    <a href="peinture.html">Peinture</a>
-                </li>
-                <li>
                     <a href="contact.html">Contact</a>
                 </li>
             </ul> 
         </div>   
     </nav> 
     <section id="content" class=container>
-        <div class="slideInRight">
+        <div data-aos="fade-right"
+        data-aos-easing="linear"
+        data-aos-duration="2500">
         <h2>
             Bienvenue sur mon site
         </h2 >
         <p>
-            Je me nomme Blandine, artiste passionnée demeurant dans le Pas de Calais près de la ville de Béthune. <br>
-            A partir d'une photo ou d'un thème, je me ferai une joie de concrétiser <strong>votre rêve .</strong>  <br>
-            Vous aurez le choix entre la peinture, un portrait, un dessin au crayon graphite, pastel sec, écoline. <br>
-            Je vous invite à regarder mes réalisations. 
+            Je me prénomme Blandine, peintre passionnée demeurant dans le Pas de Calais près de la ville de Béthune.<br>
+            A partir d'une photo, je me ferai une joie de concrétiser votre projet de portrait (à la mine au crayon graphite, pastel sec, écoline)<br>
+            Je vous invite à regarder mes réalisations.<br>
+ 
         </div>
 
-        <div id="presentation" class="slideInLeft">
+        <div id="presentation" data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="2000">
             <h2>
                 Présentation de quelques créations
             </h2 >
@@ -69,8 +71,8 @@
             </div>
         </div>
         
-        <div id="contact">
-            <p> Vous souhaitez des renseignements, une demande de tarifs, contactez-moi </p> 
+        <div id="contact" data-aos="flip-right" data-aos-duration="2000">
+            <p> Vous souhaitez des renseignements, contactez-moi </p> 
             <button id="btn-contact">
                 <a  href="contact.html">Demande de contact</a>
             </button>
@@ -80,10 +82,101 @@
 
     <footer >
         © Copyright 2021 BLANDINE T. <br>
-        Reproduction interdite  
+        © Copyright Fortanza Reproduction interdite  
     </footer>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script>
+
+    let dessin = [
+    [
+        "/assets/pictures/normal-pictures/Pastel (1).jpg", 
+        "Marilyn Monroe (crayon pastel sanguine)",
+    ],
+    [
+        "/assets/pictures/normal-pictures/graphite (2).jpg", 
+        "Mineur de Fond (au crayon graphite)"
+    ],
+    [
+        "/assets/pictures/normal-pictures/graphite (16).jpg", 
+        "Portrait d'une jeune fille avec un coquelicot(crayon graphite Ecoline et encre de chine)"
+    ],
+    [
+        "/assets/pictures/normal-pictures/graphite (15).jpg", 
+        "Coquelicot (Crayon Graphite et Ecoline)"
+    ],
+    [
+        "/assets/pictures/normal-pictures/Pastel (9).jpg", 
+        "Dessin de lion au crayon Sanguine (pastel crayon sanguine)"
+    ],
+    [
+        "/assets/pictures/normal-pictures/Pastel (3).jpg", 
+        "Le cheval enchanteur (pastel crayon sanguine)"
+    ],
+    [
+        "/assets/pictures/normal-pictures/graphite (11).jpg", 
+        "La dame au chapeau (Crayon Graphite et Ecoline)"
+    ],
+    [
+        "/assets/pictures/normal-pictures/graphite (3).jpg", 
+        "Céline (au crayon graphite)"
+    ],
+    [
+        "/assets/pictures/normal-pictures/graphite (17).jpg", 
+        "Femme chat (mine graphite, encre et pastel)"
+    ],
+    [
+        "/assets/pictures/normal-pictures/Pastel (6).jpg", 
+        "Jeune femme de dos (crayon pastel sanguine)"
+    ],
+    [
+        "/assets/pictures/normal-pictures/graphite (22).jpg", 
+        "Le chat bleu et le papillon ou le chat aux yeux couleur or"
+    ],
+    [
+        "/assets/pictures/normal-pictures/Pastel (17).jpg", 
+        "dessin au pastel, encre de couleur, Hibiscus Colibri et fleurs"
+    ],
+    [
+        "/assets/pictures/normal-pictures/graphite (23).jpg", 
+        "Portrait d'enfant (mine graphite)"
+    ],
+    [
+        "/assets/pictures/normal-pictures/graphite (19).jpg", 
+        "Mariée de dos (Mine Graphite Pastel Encre de Chine)"
+    ],
+    [
+        "/assets/pictures/normal-pictures/graphite (9).jpg", 
+        "Portrait d'un jeune fille (Crayon Graphite et Ecoline)"
+    ],
+    ];
+
+    let image = document.querySelector("#image");
+    let title= document.querySelector("#title")
+    let dernier = 0;
+    let nombreAleatoire = 0;
+
+    const genererNombreEntier = (max) => {
+        return Math.floor(Math.random() * Math.floor(max));
+    };
+
+    const animation = () => {
+        do {
+        nombreAleatoire = genererNombreEntier(dessin.length);
+        } while (nombreAleatoire == dernier);
+
+        image.setAttribute("src", dessin[nombreAleatoire][0]);
+        title.textContent = dessin[nombreAleatoire][1];
+        dernier = nombreAleatoire;
+    };
+    
+    animation();
+    
+    window.setInterval(animation, 4000);
+    </script>
+    <script>
+        AOS.init();
+      </script>
     <script type="text/javascript" src="JS/gal-anim.js"></script>
     <script type="text/javascript" src="JS/burger.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>
